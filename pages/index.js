@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='w-[85%] flex justify-start items-center mt-5'>
+        <div className='w-[85%] flex justify-start items-center m-2'>
         <img
                 className="rounded-full border border-white mr-3"
                 src="https://avatars.githubusercontent.com/u/79822706?v=4"
