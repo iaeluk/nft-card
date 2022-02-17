@@ -13,8 +13,13 @@ export default function Home() {
         
         <div className='flex flex-col items-center justify-start gap-3'> 
         <div className="w-[85%] h-[45%] mb-2 rounded-lg mt-6 flex items-center justify-center">
-          <img onMouseEnter={() => {setImgHover(true)}} onMouseLeave={() => {setImgHover(false)}} className="rounded-lg cursor-pointer" src="/assets/image-equilibrium.jpg" />
-          {imgHover && <><span onMouseEnter={() => {setImgHover(true)}} onMouseLeave={() => {setImgHover(false)}} className="cursor-pointer rounded-md w-[255px] h-[255px] absolute bg-[#00fff79c]"></span> <img onMouseEnter={() => {setImgHover(true)}} onMouseLeave={() => {setImgHover(false)}} className="absolute cursor-pointer" src="/assets/icon-view.svg" /></>}
+
+        <img onMouseEnter={() => {setImgHover(true)}} className="rounded-lg cursor-pointer" src="/assets/image-equilibrium.jpg" alt="equilibrium image" />
+
+        {imgHover && <div onMouseEnter={() => {setImgHover(true)}} onMouseLeave={() => {setImgHover(false)}} className="absolute cursor-pointer rounded-lg bg-[#00fff78e] w-[255px] h-[255px] flex items-center justify-center">
+        <img className="cursor-pointer" src="/assets/icon-view.svg" alt="icon view"/>
+        </div>}
+
 
         </div>
 
@@ -32,8 +37,9 @@ export default function Home() {
                 src="/assets/icon-ethereum.svg"
                 width={12}
                 height={12}
+                alt="ethereum icon"
               />
-              <span className="text-sm">0.041ETH</span>
+              <span className="text-sm">0.041 ETH</span>
             </div>
 
             <div className="text-[#74839a] flex justify-center items-center gap-2">
@@ -42,6 +48,7 @@ export default function Home() {
                 src="/assets/icon-clock.svg"
                 width={15}
                 height={15}
+                alt="clock icon"
               />
               <span className="text-sm">3 days left</span>
             </div>
@@ -54,6 +61,7 @@ export default function Home() {
                 src="https://avatars.githubusercontent.com/u/79822706?v=4"
                 width={35}
                 height={35}
+                alt="avatar icon"
               />
 
               <p className='text-[#74839a] text-sm font-outfit'>Creation of <span className='text-white cursor-pointer hover:text-[#00fff7]'>Lucas Mendonça</span></p>
