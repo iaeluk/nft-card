@@ -58,13 +58,13 @@ export default function Home() {
         <div className='w-[85%] flex justify-start items-center m-2'>
         <img
                 className="rounded-full border border-white mr-3"
-                src="https://avatars.githubusercontent.com/u/79822706?v=4"
+                src="/assets/image-avatar.png"
                 width={35}
                 height={35}
                 alt="avatar icon"
               />
 
-              <p className='text-[#74839a] text-sm font-outfit'>Creation of <span className='text-white cursor-pointer hover:text-[#00fff7]'>Lucas Mendonça</span></p>
+              <p className='text-[#74839a] text-sm font-outfit'>Creation of <span className='text-white cursor-pointer hover:text-[#00fff7]'>Jules Wyvern</span></p>
 
         </div>
 
